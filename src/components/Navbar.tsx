@@ -2,10 +2,6 @@ import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Github, Linkedin, Twitter, Menu, X, FacebookIcon } from "lucide-react";
 
-// import logo 
-
-import "../assets/logo.svg";
-
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
