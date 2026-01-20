@@ -33,12 +33,11 @@ export function App() {
   const heroOpacity = useTransform(scrollY, [0, 300], [1, 0]);
   const projects = [
     {
-      title: "Neon Finance Dashboard",
-      description:
-        "A real-time cryptocurrency tracking dashboard featuring live market data, interactive charts, and portfolio management tools. Built with high-performance rendering in mind.",
+      title: "POS System",
+      description: "Backend-focused POS system and modern ui design",
       tags: ["React", "TypeScript", "D3.js", "WebSocket"],
       image:
-        "https://images.unsplash.com/photo-1642104704074-907c0698cbd9?auto=format&fit=crop&q=80&w=1000",
+        "https://cdn.dribbble.com/userupload/15627893/file/original-26f419bc6097f2d5041c1d29a292b6ca.jpg?format=webp&resize=400x300&vertical=center",
     },
     {
       title: "AI Image Generator",
@@ -47,6 +46,30 @@ export function App() {
       tags: ["Next.js", "Python", "Stripe", "PostgreSQL"],
       image:
         "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=1000",
+    },
+    {
+      title: "EcoTrack Mobile App",
+      description:
+        "Cross-platform mobile application for tracking carbon footprint. Gamified experience with social features and daily challenges.",
+      tags: ["React Native", "Firebase", "Redux", "Node.js"],
+      image:
+        "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=1000",
+    },
+    {
+      title: "EcoTrack Mobile App",
+      description:
+        "Cross-platform mobile application for tracking carbon footprint. Gamified experience with social features and daily challenges.",
+      tags: ["React Native", "Firebase", "Redux", "Node.js"],
+      image:
+        "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=1000",
+    },
+    {
+      title: "EcoTrack Mobile App",
+      description:
+        "Cross-platform mobile application for tracking carbon footprint. Gamified experience with social features and daily challenges.",
+      tags: ["React Native", "Firebase", "Redux", "Node.js"],
+      image:
+        "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=1000",
     },
     {
       title: "EcoTrack Mobile App",
@@ -185,34 +208,34 @@ export function App() {
                   animate={{
                     x: ["-100%", "100%"],
                   }}
-                  // transition={{
-                  //   repeat: Infinity,
-                  //   duration: 8,
-                  //   ease: "linear",
-                  // }}
+                  transition={{
+                    repeat: Infinity,
+                    duration: 5,
+                    ease: "linear",
+                  }}
                 />
               </div>
             </motion.div>
 
             <motion.h1
               variants={itemVariants}
-              className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-8 leading-tight"
+              className="text-5xl md:text-6xl lg:text-8xl font-bold tracking-tight mb-8 leading-tight"
             >
-              Crafting digital <br />
+              Junior Full Stack Developer
+              <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-cyan via-blue-500 to-neon-purple animate-gradient-x bg-[length:200%_auto]">
-                experiences
+                Passionate
               </span>{" "}
-              with <br />
-              purpose & precision.
+              Building Modern site and Clean Code
+              <br />
             </motion.h1>
 
             <motion.p
               variants={itemVariants}
               className="text-xl text-gray-400 max-w-2xl mb-12 leading-relaxed"
             >
-              I'm Alex Morgan, a Full Stack Developer specializing in building
-              exceptional digital products. I blend technical expertise with
-              design sensibilities to create software that feels alive.
+              I’m Tola San, a Full Stack JavaScript Developer. I build digital
+              products using both coding skills and design ideas.
             </motion.p>
 
             <motion.div
@@ -279,7 +302,6 @@ export function App() {
             <ChevronDown size={24} />
           </motion.div>
         </section>
-
         {/* Skills Section */}
         <section id="skills" className="mb-32 scroll-mt-24">
           <div className="flex flex-col md:flex-row gap-12 items-start">
@@ -317,8 +339,7 @@ export function App() {
             </div>
           </div>
         </section>
-
-        {/* Projects Section */}
+        Projects Section
         <section id="projects" className="mb-32 scroll-mt-24">
           <motion.div
             initial={{
@@ -371,7 +392,6 @@ export function App() {
             </a>
           </div>
         </section>
-
         {/* Contact Section */}
         <section id="contact" className="mb-24 scroll-mt-24">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -445,7 +465,6 @@ export function App() {
             </motion.div>
           </div>
         </section>
-
         {/* Footer */}
         <footer className="border-t border-white/10 pt-8 pb-12 text-center text-gray-500 text-sm">
           <p>© 2025 Alex Morgan. Built with React, Tailwind & Framer Motion.</p>

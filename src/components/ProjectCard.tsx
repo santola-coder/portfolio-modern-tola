@@ -2,6 +2,8 @@ import React from 'react';
 import { ExternalLink, Github, ArrowUpRight } from 'lucide-react';
 import { GlassCard } from './GlassCard';
 import { motion } from 'framer-motion';
+
+
 interface ProjectCardProps {
   title: string;
   description: string;

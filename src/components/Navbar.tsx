@@ -76,26 +76,25 @@ export function Navbar() {
           </div>
 
           {/* Social Icons (Desktop) */}
-          <div className="hidden md:flex items-center gap-6">
+          <div className="hidden md:flex  items-center gap-6">
             <a
               href="https://github.com/santola-coder"
               className="text-gray-400 hover:text-white transition-colors hover:scale-110 transform duration-200"
             >
-              <Github size={20} />
+              <Github size={24} />
             </a>
             <a
               href="https://www.linkedin.com/in/tola-san-969039312/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
               className="text-gray-400 hover:text-white transition-colors hover:scale-110 transform duration-200"
             >
-              <Linkedin size={20} />
+              <Linkedin size={24} />
             </a>
             <a
               href="https://web.facebook.com/Tola.SanST/"
               className="text-gray-400 hover:text-white transition-colors hover:scale-110 transform duration-200"
             >
-              <FacebookIcon size={20} />
+              <FacebookIcon size={24} />
             </a>
-           
           </div>
 
           {/* Mobile Menu Button */}
@@ -166,22 +165,22 @@ export function Navbar() {
 
               <div className="flex justify-center gap-8 mt-auto pb-8">
                 <a
-                  href="https://github.com"
-                  className="text-gray-400 hover:text-white transition-colors"
+                  href="https://github.com/santola-coder"
+                  className="text-gray-400 hover:text-white transition-colors hover:scale-110 transform duration-200"
                 >
                   <Github size={24} />
                 </a>
                 <a
-                  href="https://linkedin.com"
-                  className="text-gray-400 hover:text-white transition-colors"
+                  href="https://www.linkedin.com/in/tola-san-969039312/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                  className="text-gray-400 hover:text-white transition-colors hover:scale-110 transform duration-200"
                 >
                   <Linkedin size={24} />
                 </a>
                 <a
-                  href="https://twitter.com"
-                  className="text-gray-400 hover:text-white transition-colors"
+                  href="https://web.facebook.com/Tola.SanST/"
+                  className="text-gray-400 hover:text-white transition-colors hover:scale-110 transform duration-200"
                 >
-                  <Twitter size={24} />
+                  <FacebookIcon size={24} />
                 </a>
               </div>
             </div>
