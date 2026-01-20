@@ -44,7 +44,7 @@ export function Navbar() {
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-24 flex justify-between items-center">
           {/* Logo */}
           <div className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-400 cursor-pointer" onClick={() => scrollToSection('hero')}>
-            AM<span className="text-neon-cyan">.</span>
+          Tola Coder<span className="text-neon-cyan">.</span>
           </div>
 
           {/* Desktop Navigation */}
