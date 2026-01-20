@@ -1,6 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Github, Linkedin, Twitter, Menu, X, FacebookIcon } from "lucide-react";
+
+// import logo 
+
+import "../assets/logo.svg";
+
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -53,7 +58,7 @@ export function Navbar() {
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b ${isScrolled ? "bg-black/50 backdrop-blur-xl border-white/10 py-4 shadow-lg shadow-black/20" : "bg-transparent border-transparent py-6"}`}
       >
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-24 flex justify-between items-center">
-          {/* Logo */}
+          {}
           <div
             className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-400 cursor-pointer"
             onClick={() => scrollToSection("hero")}
