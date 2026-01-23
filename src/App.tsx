@@ -1,5 +1,6 @@
 import React, { useRef, Children } from "react";
 import { motion, useScroll, useTransform, useSpring } from "framer-motion";
+import image from "./assets/images/image.png";
 import {
   Code2,
   Palette,
@@ -33,11 +34,13 @@ export function App() {
   const heroOpacity = useTransform(scrollY, [0, 300], [1, 0]);
   const projects = [
     {
-      title: "POS System",
-      description: "Backend-focused POS system and modern ui design",
-      tags: ["React", "TypeScript", "D3.js", "WebSocket"],
-      image:
-        "https://cdn.dribbble.com/userupload/15627893/file/original-26f419bc6097f2d5041c1d29a292b6ca.jpg?format=webp&resize=400x300&vertical=center",
+      title: "KhmerBoost",
+      description:
+        "As the digital economy continues to grow, small and medium-sized businesses in Cambodia face increasing competition and higher expectations from customers.",
+      tags: ["HTML5", "CSS3", "Bootstrap"],
+      image: image,
+      demoUrl: "https://khmerboost.vercel.app/",
+      githubUrl: "https://github.com/santola-coder/project-khmerboost.git",
     },
     {
       title: "AI Image Generator",
